@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WorkPlanner — Smart Task Manager for Mac</title>
+  <meta name="description" content="WorkPlanner is a powerful Mac app that helps you manage your tasks, projects and time in one place. Your data always stays on your device." />
+  <meta property="og:title" content="WorkPlanner — Task Manager for Mac" />
+  <meta property="og:description" content="Kanban board, time tracking, project management and more. All your data stays on your device." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <a href="en.html" class="nav-logo">
+    <svg width="28" height="28" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="border-radius:7px;flex-shrink:0">
+      <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6c63ff"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient></defs>
+      <rect width="100" height="100" rx="22" fill="url(#g)"/>
+      <rect x="22" y="18" width="56" height="64" rx="7" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1.2"/>
+      <rect x="22" y="18" width="56" height="16" rx="7" fill="rgba(255,255,255,0.2)"/>
+      <rect x="22" y="25" width="56" height="9" fill="rgba(255,255,255,0.2)"/>
+      <circle cx="33" cy="46" r="4.5" fill="white"/>
+      <polyline points="30.5,46 32.5,48.2 36,43.5" fill="none" stroke="#6c63ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="40" y="43.5" width="24" height="5" rx="2.5" fill="rgba(255,255,255,0.5)"/>
+      <circle cx="33" cy="57" r="4.5" fill="white"/>
+      <polyline points="30.5,57 32.5,59.2 36,54.5" fill="none" stroke="#6c63ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="33" cy="68" r="4.5" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.5"/>
+      <rect x="40" y="65.5" width="22" height="5" rx="2.5" fill="rgba(255,255,255,0.35)"/>
+    </svg>
+    WorkPlanner
+  </a>
+  <span class="nav-spacer"></span>
+  <nav class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#how">How It Works</a>
+    <a href="privacy-en.html">Privacy</a>
+  </nav>
+  <div class="lang-toggle">
+    <a href="index.html" class="lang-btn">TR</a>
+    <a href="en.html"    class="lang-btn active">EN</a>
+  </div>
+  <a href="#download" class="nav-cta">
+    <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+    App Store
+  </a>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-blob1"></div>
+  <div class="hero-blob2"></div>
+
+  <div class="hero-eyebrow reveal">
+    <span></span>
+    Productivity App for Mac
+  </div>
+
+  <h1 class="reveal reveal-delay-1">
+    Manage your tasks,<br>
+    <span class="grad">intelligently.</span>
+  </h1>
+
+  <p class="hero-sub reveal reveal-delay-2">
+    Kanban board, time tracking, project management and powerful analytics — all your data stays on your device, completely private.
+  </p>
+
+  <div class="hero-actions reveal reveal-delay-3">
+    <a href="#download" class="btn-primary">
+      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Download on the App Store
+    </a>
+    <a href="#features" class="btn-ghost">See Features →</a>
+  </div>
+
+  <!-- App window mockup -->
+  <div class="app-window reveal">
+    <div class="window-bar">
+      <div class="w-dot" style="background:#ff5f57"></div>
+      <div class="w-dot" style="background:#febc2e"></div>
+      <div class="w-dot" style="background:#28c840"></div>
+      <span class="w-title">WorkPlanner</span>
+    </div>
+    <div class="window-screen">
+      <img src="assets/screenshots/E9EAF47A-1337-46AB-9C53-213DB8B8BF07.png" alt="WorkPlanner main screen">
+    </div>
+  </div>
+</section>
+
+<!-- Privacy strip -->
+<div class="privacy-strip">
+  <div class="privacy-strip-inner">
+    <div class="priv-item">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      No internet connection
+    </div>
+    <div class="priv-item">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      No cloud account required
+    </div>
+    <div class="priv-item">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      Buy once, use forever
+    </div>
+    <div class="priv-item">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      100% local data
+    </div>
+  </div>
+</div>
+
+<!-- Stats -->
+<section class="section centered" id="stats">
+  <p class="section-chip reveal">Why WorkPlanner</p>
+  <h2 class="section-title reveal reveal-delay-1">Productivity by the numbers</h2>
+  <p class="section-sub reveal reveal-delay-2">Track your productivity with data, reach your goals.</p>
+
+  <div class="stats-bar reveal reveal-delay-3">
+    <div class="stat-item">
+      <div class="stat-num">6+</div>
+      <div class="stat-label">Core Features</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">0</div>
+      <div class="stat-label">Data Sent to Cloud</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">∞</div>
+      <div class="stat-label">Task Capacity</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">1×</div>
+      <div class="stat-label">Payment, No Subscription</div>
+    </div>
+  </div>
+</section>
+
+<!-- Bento features -->
+<section class="section" id="features">
+  <div class="centered" style="margin-bottom:56px">
+    <p class="section-chip reveal">Features</p>
+    <h2 class="section-title reveal reveal-delay-1">Everything you need</h2>
+    <p class="section-sub reveal reveal-delay-2">From quick notes to complex projects — manage it all in one place.</p>
+  </div>
+
+  <div class="bento">
+    <!-- Large card: Task list -->
+    <div class="bento-card bc-wide reveal">
+      <div class="bento-icon">📋</div>
+      <h3 class="bento-title">Task Management</h3>
+      <p class="bento-desc">Organise all your tasks with priority, category, and due dates. Separate views for Today, Upcoming, and Completed.</p>
+      <div class="bento-screenshot">
+        <img src="assets/screenshots/E9EAF47A-1337-46AB-9C53-213DB8B8BF07.png" alt="Task list">
+      </div>
+    </div>
+
+    <!-- Narrow card: Stats -->
+    <div class="bento-card bc-narrow reveal reveal-delay-1">
+      <div class="bento-icon">📊</div>
+      <h3 class="bento-title">Statistics Dashboard</h3>
+      <p class="bento-desc">Completion rate, category breakdown, weekly trends — measure your productivity with real data.</p>
+      <div class="bento-screenshot" style="margin-top:16px">
+        <img src="assets/screenshots/B11639A8-E4B4-4205-913E-91F1500B5401.png" alt="Statistics dashboard">
+      </div>
+    </div>
+
+    <!-- Third cards -->
+    <div class="bento-card bc-third reveal">
+      <div class="bento-icon">📁</div>
+      <h3 class="bento-title">Project Management</h3>
+      <p class="bento-desc">Organise tasks into color-coded projects. Filter by project and switch between views effortlessly.</p>
+      <div class="bento-screenshot" style="margin-top:16px">
+        <img src="assets/screenshots/D1746196-B8B3-4BBD-9240-FDAFC24AF022.png" alt="New project">
+      </div>
+    </div>
+
+    <div class="bento-card bc-third reveal reveal-delay-1">
+      <div class="bento-icon">⏱️</div>
+      <h3 class="bento-title">Time Tracking</h3>
+      <p class="bento-desc">Track time spent on any task. Weekly and monthly reports show exactly how you spend your time.</p>
+      <div class="bento-screenshot" style="margin-top:16px">
+        <img src="assets/screenshots/5E0CD3A7-38A6-4507-8456-9C29C6B81970.png" alt="Task detail and time tracking">
+      </div>
+    </div>
+
+    <div class="bento-card bc-third reveal reveal-delay-2">
+      <div class="bento-icon">🔒</div>
+      <h3 class="bento-title">100% Private</h3>
+      <p class="bento-desc">All data stored locally on your device. No internet connection, no cloud account, no privacy concerns.</p>
+    </div>
+
+    <!-- Half cards -->
+    <div class="bento-card bc-half reveal">
+      <div class="bento-icon">🔔</div>
+      <h3 class="bento-title">Smart Notifications</h3>
+      <p class="bento-desc">Native macOS notifications when a task is due. Use ⌘⇧Space to quickly add a task from any app.</p>
+    </div>
+
+    <div class="bento-card bc-half reveal reveal-delay-1">
+      <div class="bento-icon">💾</div>
+      <h3 class="bento-title">Backup & Restore</h3>
+      <p class="bento-desc">Export your data as JSON, move it across devices. Auto-backup is created every time the app closes.</p>
+      <div class="bento-screenshot" style="margin-top:16px">
+        <img src="assets/screenshots/8766C4C1-2EBA-4AB4-96D0-C92B33249073.png" alt="Backup screen">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Spotlight: Statistics -->
+<section class="section" id="how">
+  <div class="spotlight">
+    <div class="spotlight-text">
+      <p class="section-chip reveal">Analytics</p>
+      <h2 class="section-title reveal reveal-delay-1">Measure your productivity with real data</h2>
+      <p class="section-sub reveal reveal-delay-2" style="margin-bottom:0">
+        Weekly trend charts, category breakdowns and completion rates — see how productive you are at a glance.
+      </p>
+      <ul class="feature-list reveal reveal-delay-3">
+        <li>Daily and weekly task completion statistics</li>
+        <li>Category and priority distribution</li>
+        <li>Overall completion rate overview</li>
+        <li>Tasks in progress vs. completed breakdown</li>
+      </ul>
+    </div>
+    <div class="spotlight-visual reveal reveal-delay-1">
+      <img src="assets/screenshots/B11639A8-E4B4-4205-913E-91F1500B5401.png" alt="Statistics dashboard">
+    </div>
+  </div>
+</section>
+
+<!-- Spotlight: Kanban (reversed) -->
+<section class="section">
+  <div class="spotlight reverse">
+    <div class="spotlight-text">
+      <p class="section-chip reveal">Kanban Board</p>
+      <h2 class="section-title reveal reveal-delay-1">Keep your projects organised, nothing gets lost</h2>
+      <p class="section-sub reveal reveal-delay-2" style="margin-bottom:0">
+        Drag and drop tasks between columns. A separate Kanban board for each project — completed tasks are automatically archived.
+      </p>
+      <ul class="feature-list reveal reveal-delay-3">
+        <li>Three columns: To Do, In Progress, Done</li>
+        <li>Per-project color coding</li>
+        <li>Time tracking right on the task card</li>
+        <li>Quick task creation from any column</li>
+      </ul>
+    </div>
+    <div class="spotlight-visual reveal reveal-delay-1">
+      <img src="assets/screenshots/DE8D70BD-EFEA-478E-8332-648DCE3748E9.png" alt="Kanban board">
+    </div>
+  </div>
+</section>
+
+<!-- How it works steps -->
+<section class="section centered">
+  <p class="section-chip reveal">How It Works</p>
+  <h2 class="section-title reveal reveal-delay-1">Get started in 3 steps</h2>
+  <p class="section-sub reveal reveal-delay-2">No setup process, no account required.</p>
+
+  <div style="display:flex;gap:24px;max-width:900px;margin:0 auto;flex-wrap:wrap;justify-content:center">
+    <div class="bento-card reveal" style="flex:1;min-width:240px;max-width:280px;text-align:left">
+      <div style="font-size:32px;font-weight:900;color:rgba(108,99,255,0.3);margin-bottom:16px;letter-spacing:-2px">01</div>
+      <h3 class="bento-title">Download & Install</h3>
+      <p class="bento-desc">Get WorkPlanner from the App Store. One-click install, ready in seconds.</p>
+    </div>
+    <div class="bento-card reveal reveal-delay-1" style="flex:1;min-width:240px;max-width:280px;text-align:left">
+      <div style="font-size:32px;font-weight:900;color:rgba(108,99,255,0.3);margin-bottom:16px;letter-spacing:-2px">02</div>
+      <h3 class="bento-title">Add a Task</h3>
+      <p class="bento-desc">Use ⌘N from anywhere to quickly add a task. Set category, priority and due date.</p>
+    </div>
+    <div class="bento-card reveal reveal-delay-2" style="flex:1;min-width:240px;max-width:280px;text-align:left">
+      <div style="font-size:32px;font-weight:900;color:rgba(108,99,255,0.3);margin-bottom:16px;letter-spacing:-2px">03</div>
+      <h3 class="bento-title">Stay on Track</h3>
+      <p class="bento-desc">Manage projects on the Kanban board and track your productivity with statistics.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="download">
+  <h2 class="reveal">Take your productivity<br>to the next level</h2>
+  <p class="reveal reveal-delay-1">Available on the Mac App Store. Buy once, use forever.</p>
+  <div class="hero-actions reveal reveal-delay-2">
+    <a href="#" class="btn-primary">
+      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Download on the Mac App Store
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:4px">
+        <svg width="24" height="24" viewBox="0 0 100 100" style="border-radius:6px;flex-shrink:0">
+          <rect width="100" height="100" rx="22" fill="#6c63ff"/>
+          <circle cx="33" cy="46" r="4.5" fill="white"/>
+          <polyline points="30.5,46 32.5,48.2 36,43.5" fill="none" stroke="#6c63ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="40" y="43.5" width="24" height="5" rx="2.5" fill="rgba(255,255,255,0.7)"/>
+          <circle cx="33" cy="57" r="4.5" fill="white"/>
+          <polyline points="30.5,57 32.5,59.2 36,54.5" fill="none" stroke="#6c63ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="40" y="54.5" width="30" height="5" rx="2.5" fill="rgba(255,255,255,0.7)"/>
+        </svg>
+        WorkPlanner
+      </div>
+      <p>Smart task manager for Mac. All data on your device, completely private.</p>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">App</div>
+      <a href="#features">Features</a>
+      <a href="#how">How It Works</a>
+      <a href="#download">Download</a>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Legal</div>
+      <a href="privacy-en.html">Privacy Policy</a>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <a href="mailto:ferdiumt@gmail.com">ferdiumt@gmail.com</a>
+      <a href="index.html">Türkçe</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2025 WorkPlanner. All rights reserved.</span>
+    <span>Made for macOS ♥</span>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
