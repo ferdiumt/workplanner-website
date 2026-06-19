@@ -728,6 +728,30 @@ body::before {
   color: var(--p2);
 }
 
+/* ─── Image protection ───────────────────────────────────────────────────────── */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.bento-screenshot,
+.spotlight-visual,
+.window-screen {
+  position: relative;
+}
+
+.bento-screenshot::after,
+.spotlight-visual::after,
+.window-screen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
 /* ─── Responsive ─────────────────────────────────────────────────────────────── */
 @media (max-width: 900px) {
   .bento { grid-template-columns: 1fr 1fr; }
